@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import InfoItem from "./components/InfoItem";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import Gallery from "./components/Gallery";
 import { cardsItems } from "./constants/cardsItems";
 
 function App() {
@@ -62,20 +63,13 @@ function App() {
                 </div>
                 <div className="w-full px-12 pt-10 flex flex-col align-center items-center justify-center lg:justify-between">
                     <span className="text-3xl lg:text-5xl">Our history</span>
-                    <motion.img
-                        className="rounded-[20px] w-60 lg:w-8/12 my-10"
-                        src="./assets/images/ceralist-bottles.jpg"
-                        alt="Ceralist cooking pot"
-                        animate={{opacity:0}}
-                        whileInView={{opacity:1}}
-                        transition={{duration: 1}}
-                    />
-                    <p className="text-base">
+                    <p className="text-base text-center py-5">
                         Ceralist is a personal project that arises from my need
                         to re-create and model with my hands. Keeping the mind
                         entertained in the activity becomes something healing
                         and relaxing at the same time... it is a therapy
                     </p>
+                    <Gallery />
                 </div>
                 <ContactForm />
             </main>
